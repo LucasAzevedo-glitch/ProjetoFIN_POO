@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+
+# Arquivos temporários de compilação
+bin/
+obj/
+
+# Configurações locais
+*.user
+*.suo
+
+# Arquivos temporários
+*.cache
