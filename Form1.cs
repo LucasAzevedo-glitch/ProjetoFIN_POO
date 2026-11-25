@@ -15,36 +15,30 @@ namespace BibliotecaPessoal
         public BibliotecaPessoal()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Listagem telaListagem = new Listagem();
+            telaListagem.MdiParent = this;
+            telaListagem.Show();
         }
 
         private void BibliotecaPessoal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void livrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro telaCadastro = new Cadastro();
+            telaCadastro.MdiParent = this;
+            telaCadastro.Show();
+        }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
